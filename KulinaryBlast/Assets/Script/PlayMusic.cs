@@ -12,6 +12,7 @@ public class PlayMusic : MonoBehaviour
     {
         
     }
+    //void OnTouchDown()
     void OnMouseDown()
     {
         if (gameObject.name == "Tombol lagu 1")
