@@ -15,7 +15,7 @@ public class PlayMusic : MonoBehaviour
     //void OnTouchDown()
     void OnMouseDown()
     {
-        if (gameObject.name == "Tombol lagu 1")
+        if (gameObject.name == "apuse")
         {
             lagu1.Play();
             lagu2.Stop();
