@@ -321,6 +321,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &382876765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382876767}
+  - component: {fileID: 382876766}
+  m_Layer: 0
+  m_Name: MatchFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &382876766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382876765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d697d49d0feabe41af0f0a71bdf4765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMatches: []
+--- !u!4 &382876767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382876765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7661728, y: -1.016788, z: -0.30227292}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &462718832
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,8 +854,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661ab2e681d661c40a068576dd32778b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 1
   width: 5
   height: 5
+  offSet: 20
   tilePrefab: {fileID: 4277658966038663302, guid: 11f239a204ceccb48b71f7786660d944,
     type: 3}
   dots:
