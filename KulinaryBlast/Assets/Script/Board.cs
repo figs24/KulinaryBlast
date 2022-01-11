@@ -18,11 +18,13 @@ public class Board : MonoBehaviour
     public GameObject[] dots;
     public GameObject[,] allDots;
     private FindMatches findMatches;
-
+    public int basePieceValue = 50;
+    private TimerSet scoreManager;
     // Start is called before the first frame update
     void Start()
     {
-        findMatches= FindObjectOfType<FindMatches>();
+        scoreManager = FindObjectOfType<TimerSet>();
+        findMatches = FindObjectOfType<FindMatches>();
         allTiles = new BackgroundTile[width, height];
         allDots = new GameObject[width, height];
         SetUp();
@@ -95,6 +97,7 @@ public class Board : MonoBehaviour
         {
             findMatches.currentMatches.Remove(allDots[column, row]);
             Destroy(allDots[column, row]);
+            scoreManager.IncreaseScore(basePieceValue);
             allDots[column, row] = null;
         }
     }

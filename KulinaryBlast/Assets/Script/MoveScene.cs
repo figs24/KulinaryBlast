@@ -28,6 +28,14 @@ public class MoveScene : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+    public void onPlayGame1()
+    {
+        SceneManager.LoadScene("Game1");
+    }
+    public void onPlayGame2()
+    {
+        SceneManager.LoadScene("Game2");
+    }
     public void onMenu()
     {
         SceneManager.LoadScene("MainMenu");
